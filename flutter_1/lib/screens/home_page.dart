@@ -10,8 +10,24 @@ class HomePage extends StatefulWidget {
 class HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-        child: Center(child: Text('WControl')),
-      );
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('WControl'),        
+      ),
+
+      
+      body: Center(
+          child: Text('Qualquer texto só para testar',
+              style: TextStyle(fontSize: 20))),
+
+
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.favorite, color: Colors.pink,),
+        onPressed: () {
+          
+          
+        },
+        ),
+    );
   }
 }
