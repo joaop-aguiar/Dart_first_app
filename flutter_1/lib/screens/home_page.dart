@@ -16,9 +16,18 @@ class HomePageState extends State<HomePage> {
       ),
 
       
-      body: Center(
-          child: Text('Qualquer texto só para testar',
-              style: TextStyle(fontSize: 20))),
+      body: Container(
+        height: 200,
+        width: 200,
+        color: Colors.green,
+        child: Center(
+          child: Container(
+            height: 100,
+            width: 100,
+            color: Colors.black,
+            ),
+        ),
+      ),
 
 
       floatingActionButton: FloatingActionButton(
